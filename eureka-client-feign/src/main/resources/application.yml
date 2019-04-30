@@ -1,0 +1,18 @@
+server:
+  port: 8502
+
+spring:
+  application:
+    name: eureka-client-feign
+  zipkin:
+    base-url: http://localhost:8602
+eureka:
+  instance:
+    preferIpAddress: true
+    #ip-address: 103.36.173.37
+  client:
+    service-url:
+      defaultZone: http://peer1:10001/eureka/,http://peer2:10002/eureka/
+feign:
+  hystrix:
+    enabled: true  # 启用feign的hystrix
