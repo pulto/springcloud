@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: eureka-client-one
+  zipkin:
+    base-url: http://localhost:8602
 eureka:
   instance:
     preferIpAddress: true

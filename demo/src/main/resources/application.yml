@@ -1,0 +1,5 @@
+com:
+  name: didi
+  title: Spring Boot Learning
+  desc: ${com.name} is writing ${com.title}
+SpringApplication:
